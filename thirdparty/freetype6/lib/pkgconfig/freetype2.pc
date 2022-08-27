@@ -1,0 +1,14 @@
+prefix=/usr/x86_64-w64-mingw32/sys-root/mingw
+exec_prefix=/usr/x86_64-w64-mingw32/sys-root/mingw
+libdir=/usr/x86_64-w64-mingw32/sys-root/mingw/lib
+includedir=/usr/x86_64-w64-mingw32/sys-root/mingw/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 21.0.15
+Requires:
+Requires.private: zlib, libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: -lbz2
+Cflags: -I${includedir}/freetype2
